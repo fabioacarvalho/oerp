@@ -20,6 +20,9 @@ class Product(models.Model):
     price = models.FloatField(verbose_name="Price", null=True, blank=True)
     qtde = models.FloatField(verbose_name="Qtde", default=float(0))
     unity = models.CharField(max_length=10, verbose_name="Unity", choices=UNITY_CHOICES, default="un")
+    pn = models.CharField(max_length=300, verbose_name="Part Number", blank=True, null=True)
+    sn = models.CharField(max_length=300, verbose_name="Serial Number", blank=True, null=True)
+    component = models.BooleanField(default=False, verbose_name="Component")
 
     def __str__(self) -> str:
         return str(self.pk)

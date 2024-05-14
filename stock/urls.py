@@ -3,4 +3,5 @@ from stock.views import *
 
 urlpatterns = [
     url('products/', stock_products, name="stock_products"),
+    url('', home, name="home"),
 ]

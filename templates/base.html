@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "partials/_header.html" %}
+<body>
+    <main>
+        {% include "partials/_navbar.html" %}
+        <section class="d-flex flex-row">
+            {% include "partials/_sidebar.html" %}
+            
+            <div class="p-3">
+                {% block content %}{% endblock content %}
+            </div>
+            
+            {% include "partials/_footer.html" %}
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height: 93vh;;">
+    <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+            <a href="{% url 'index' %}" class="nav-link active" aria-current="page">
+                <i class="fi fi-rr-home"></i>
+            Home
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link text-white">
+                <i class="fi fi-rr-chart-histogram"></i>
+            Dashboard
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link text-white">
+                <i class="fi fi-rr-file-invoice-dollar"></i>
+            Orders
+            </a>
+        </li>
+        <li>
+            <a href="{% url "changelist" 'stock' 'product' %}" class="nav-link text-white">
+                <i class="fi fi-rr-boxes"></i>
+            Products
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link text-white">
+                <i class="fi fi-rr-users-alt"></i>
+            Customers
+            </a>
+        </li>
+    </ul>
+    <hr>
+    <div class="dropdown">
+        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fi fi-rr-settings rounded-circle me-2"></i>
+            <strong>Settings</strong>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+    </div>
+  </div>
